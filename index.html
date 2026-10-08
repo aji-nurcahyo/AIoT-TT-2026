@@ -1,16 +1,153 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Presentasi AIoT - Aji Pamungkas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Presentasi AIoT - Aji Pamungkas Tri Nurcahyo</title>
+
+    <!-- Memuat CSS Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <!-- Tema presentasi (Bisa diganti: black, white, league, sky, beige, simple, serif, blood, night, moon, solarized) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/league.min.css" id="theme">
+
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #333; }
-        iframe { width: 100%; height: 100%; border: none; }
+        /* Penyesuaian khusus agar teks lebih rapi */
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; color: #4ade80; }
+        .reveal p, .reveal li { font-size: 0.8em; line-height: 1.5; text-align: left; }
+        .center-text { text-align: center !important; }
+        .highlight { color: #60a5fa; font-weight: bold; }
     </style>
 </head>
 <body>
-    <!-- Pastikan nama file PDF di bawah ini SAMA PERSIS dengan file PDF yang Bapak buat -->
-    <iframe src="AIoT_TT_2026.pdf"></iframe>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: JUDUL -->
+            <section class="center-text">
+                <h3>Konvergensi Teknologi Masa Depan</h3>
+                <h1 style="font-size: 3.5em; margin-bottom: 0;">AIoT</h1>
+                <p class="center-text">Artificial Intelligence & Internet of Things</p>
+                <br>
+                <p class="center-text" style="font-size: 0.7em; color: #cbd5e1;">
+                    <strong>Pemateri: Aji Pamungkas Tri Nurcahyo</strong><br>
+                    Institut Teknologi Sumatera (ITERA)
+                </p>
+                <p class="center-text" style="font-size: 0.5em; margin-top: 30px;">(Gunakan tanda panah keyboard ➡️ untuk lanjut)</p>
+            </section>
+
+            <!-- SLIDE 2: AGENDA -->
+            <section>
+                <h2>Agenda Pembahasan</h2>
+                <ul>
+                    <li><span class="highlight">01. Konsep Dasar:</span> Pengertian AI, IoT, & AIoT</li>
+                    <li><span class="highlight">02. Arsitektur Teknis:</span> Dari Sensor hingga Cloud</li>
+                    <li><span class="highlight">03. Studi Kasus ITERA:</span> Implementasi Riset Mahasiswa</li>
+                    <li><span class="highlight">04. Peluang Pendanaan:</span> Hibah HIKARI & PKM</li>
+                    <li><span class="highlight">05. Potensi HKI & Karir:</span> Hak Cipta, Paten, & Roadmap</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 3: KONSEP DASAR -->
+            <section>
+                <section>
+                    <h2>1. Fundamental Teknologi</h2>
+                    <p>Apa itu AIoT? Mari kita bedah satu per satu (tekan panah bawah ⬇️)</p>
+                </section>
+                <section>
+                    <h3>Artificial Intelligence (AI)</h3>
+                    <p><strong>Otak Digital:</strong> Algoritma pemrosesan data, pengenalan pola, dan pengambilan keputusan cerdas secara otonom tanpa campur tangan manusia.</p>
+                </section>
+                <section>
+                    <h3>Internet of Things (IoT)</h3>
+                    <p><strong>Sistem Saraf & Sensor:</strong> Jaringan perangkat fisik (hardware) ber-sensor yang saling terhubung untuk mengumpulkan dan mentransmisikan data real-time.</p>
+                </section>
+                <section>
+                    <h3>Konvergensi: AIoT</h3>
+                    <p>Penggabungan AI dan IoT. Sensor mengumpulkan data lingkungan, kemudian AI secara langsung (di edge/cloud) menganalisis data tersebut untuk memicu aksi otomatis (actuation).</p>
+                </section>
+            </section>
+
+            <!-- SLIDE 4: ARSITEKTUR TEKNIS -->
+            <section>
+                <h2>2. Arsitektur Teknis AIoT</h2>
+                <ul>
+                    <li><strong>Perception (Sensor):</strong> MEMS, Camera, ADC, GPIO.</li>
+                    <li><strong>Network (Jaringan):</strong> MQTT, CoAP, LoRaWAN, Wi-Fi.</li>
+                    <li><strong>Edge Processing:</strong> TinyML, TFLite Micro pada ESP32 / STM32.</li>
+                    <li><strong>Application (Cloud):</strong> InfluxDB, Grafana, AWS IoT, Dashboard.</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 5: STUDI KASUS ITERA -->
+            <section>
+                <h2>3. Studi Kasus Riset di ITERA</h2>
+                <ul>
+                    <li><strong>Smart Agriculture:</strong> Pengering kopi hibrida AIoT, mendeteksi suhu dan kadar air berbasis TinyML.</li>
+                    <li><strong>Smart Village Karang Anyar:</strong> Monitoring dan kontrol otomatis mikroklimat pada kumbung jamur tiram.</li>
+                    <li><strong>Kebun Raya ITERA:</strong> Node sensor terdistribusi berbasis LoRaWAN untuk memantau kualitas udara dan kelembaban tanah.</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 6: PENDANAAN -->
+            <section>
+                <h2>4. Peluang Pendanaan Riset</h2>
+                <ul>
+                    <li><span class="highlight">Hibah HIKARI ITERA:</span> Pendanaan internal kampus untuk inovasi karya prototipe hardware & AIoT mahasiswa.</li>
+                    <li><span class="highlight">PKM Belmawa (PKM-KC/RE):</span> Kompetisi nasional Kemenristekdikti menuju PIMNAS.</li>
+                    <li><span class="highlight">Kedaireka & Mitras DUDI:</span> Matching grant untuk kolaborasi riset dosen, mahasiswa, dan industri.</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 7: HKI -->
+            <section>
+                <h2>5. Potensi Hak Kekayaan Intelektual</h2>
+                <ul>
+                    <li><strong>Hak Cipta:</strong> Perlindungan source code (C++/Python), aplikasi mobile, & web dashboard monitoring.</li>
+                    <li><strong>Paten / Paten Sederhana:</strong> Perlindungan untuk metode algoritma AI, alur inferensi sensor, atau sistem kendali mekanis alat.</li>
+                    <li><strong>Desain Industri:</strong> Estetika bentuk fisik dan casing enclosure alat (misal hasil 3D printing node sensor).</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 8: KARIR -->
+            <section>
+                <h2>Roadmap Karir AIoT</h2>
+                <ul>
+                    <li><span class="highlight">Embedded ML Engineer:</span> Fokus pada C/C++, Microcontrollers, RTOS, dan optimasi TinyML.</li>
+                    <li><span class="highlight">AIoT Solutions Architect:</span> Merancang topologi MQTT, Cloud AWS/GCP, dan keamanan jaringan.</li>
+                    <li><span class="highlight">Edge AI Researcher:</span> Fokus riset kompresi model AI (Quantization/Pruning) dan Computer Vision untuk perangkat low-power.</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 9: PENUTUP -->
+            <section class="center-text">
+                <h2>Terima Kasih</h2>
+                <p>Mari berinovasi dan ciptakan solusi nyata melalui AIoT!</p>
+                <br>
+                <p style="font-size: 0.6em; color: #cbd5e1;">(Tekan tombol 'F' untuk Fullscreen)</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Memuat Script Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        // Inisialisasi presentasi
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: false,
+            hash: true,
+            transition: 'slide', // Pilihan transisi: none/fade/slide/convex/concave/zoom
+            
+            // Konfigurasi agar slide otomatis menyesuaikan layar
+            width: 960,
+            height: 700,
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 2.0
+        });
+    </script>
 </body>
 </html>
